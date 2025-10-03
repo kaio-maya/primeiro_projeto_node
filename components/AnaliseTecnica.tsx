@@ -41,7 +41,7 @@ function TradingViewWidget() {
                 "title": "SOJA"
               }
             ],
-            "colorTheme": "dark",
+            "colorTheme": "light",
             "locale": "br",
             "largeChartUrl": "",
             "isTransparent": true,
