@@ -1,6 +1,6 @@
 // Arquivo: app/page.tsx
 import GraficoTradingView from '@/components/GraficoTradingView';
-import AnaliseTecnica from '@/components/analiseTecnica';
+import AnaliseTecnica from '@/components/AnaliseTecnica';
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bgt-gray-100">
