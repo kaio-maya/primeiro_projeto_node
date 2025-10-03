@@ -15,10 +15,10 @@ function TradingViewWidget() {
         script.async = true;
         script.innerHTML = `
           {
-            "lineWidth": 1,
+            "lineWidth": 2,
             "lineType": 0,
             "chartType": "area",
-            "showVolume": true,
+            "showVolume": false,
             "fontColor": "rgb(106, 109, 120)",
             "gridLineColor": "rgba(46, 46, 46, 0.06)",
             "volumeUpColor": "rgba(34, 171, 148, 0.5)",
@@ -60,11 +60,11 @@ function TradingViewWidget() {
               "60m|1W",
               "all|1M"
             ],
-            "fontSize": "10",
+            "fontSize": "14",
             "headerFontSize": "medium",
             "autosize": false,
             "width": "100%",
-            "height": "100%",
+            "height": "80%",
             "noTimeScale": false,
             "hideDateRanges": false,
             "hideMarketStatus": false,

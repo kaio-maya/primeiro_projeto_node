@@ -1,6 +1,6 @@
 // Arquivo: app/page.tsx
 import GraficoTradingView from '@/components/GraficoTradingView';
-
+import AnaliseTecnica from '@/components/analiseTecnica';
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bgt-gray-100">
@@ -11,11 +11,12 @@ export default function Home() {
         </nav>
       </header>
       </div>
-      <div className="text-center p-8 bg-white rounded-lg shadow-lg w-full max-w-3xl h-200 ">
+      <div className="text-center p-8 bg-amber-50 bg-gradient-to-l rounded-lg shadow-lg w-full max-w-3xl h-200 ">
 
       <h1 className="text-6xl font-bold text-blue-600">
-        Minha Primeira Página com Next.js!
+        Pesquisa de Ações
       </h1>
+      <AnaliseTecnica />
       <GraficoTradingView />
       </div>
     </main>
