@@ -41,10 +41,7 @@ function TradingViewWidget() {
             "valuesTracking": "1",
             "changeMode": "price-and-percent",
             "symbols": [
-              [
-                "Apple",
-                "NASDAQ:AAPL|1D"
-              ],
+            
               [
                 "BMFBOVESPA:SJC1!|1D"
               ],
@@ -84,7 +81,6 @@ function TradingViewWidget() {
   return (
     <div className="tradingview-widget-container" ref={container}>
       <div className="tradingview-widget-container__widget"></div>
-      <div className="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/" rel="noopener nofollow" target="_blank"><span className="blue-text">World markets</span></a> by TradingView</div>
     </div>
   );
 }

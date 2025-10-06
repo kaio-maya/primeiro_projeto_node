@@ -7,7 +7,7 @@ function TradingViewWidget() {
 
   useEffect(
     () => {
-    if (container.current) {
+      if (container.current) {
 
         const script = document.createElement("script");
         script.src = "https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js";
@@ -19,8 +19,8 @@ function TradingViewWidget() {
             "chartOnly": false,
             "dateRange": "12M",
             "noTimeScale": false,
-            "colorTheme": "dark",
-            "isTransparent": false,
+            "colorTheme": "light",
+            "isTransparent": true,
             "locale": "br",
             "width": "100%",
             "autosize": true,
@@ -32,7 +32,7 @@ function TradingViewWidget() {
                 container.current.innerHTML = '';
             }
         }
-    }
+      } 
     },
     []
   );
@@ -40,7 +40,6 @@ function TradingViewWidget() {
   return (
     <div className="tradingview-widget-container" ref={container}>
       <div className="tradingview-widget-container__widget"></div>
-      <div className="tradingview-widget-copyright"><a href="https://br.tradingview.com/symbols/MATBAROFEX-CRN.CME1!/" rel="noopener nofollow" target="_blank"><span className="blue-text">Track all markets on TradingView</span></a></div>
     </div>
   );
 }
